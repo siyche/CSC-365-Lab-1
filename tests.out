@@ -1,0 +1,70 @@
+Enter Command:
+any input
+• S[tudent]: <lastname> [B[us]]
+• T[eacher]: <lastname>
+• B[us]: <number>
+• G[rade]: <number> [H[igh]|L[ow]]
+• A[verage]: <number>
+• I[nfo]
+• Q[uit]
+
+
+Command: S: COOKUS 
+Output: COOKUS, XUAN, Grade: 3, Classroom: 107, Teacher: FAFARD ROCIO
+
+Command: S: CORKER
+Output: CORKER, CARTER, Grade: 4, Classroom: 105, Teacher: HANTZ JED
+
+Command: S: COOKUS B
+Output: COOKUS, XUAN, Bus Route: 52
+
+Command: T: FAFARD
+Output: 
+    COOKUS, XUAN
+    ELHADDAD, SHANTE
+    SWEDLUND, SHARRI
+    CIGANEK, MANIE
+    COVINGTON, TOMAS
+    EARLY, TORY
+    LINHART, LELA
+
+Command: G: 1
+Output:
+    SAELEE, DANILO
+    GARTH, JOHN
+
+Command: B: 53
+Output:
+    CORKER, CARTER, Grade: 4, Classroom: 105
+    WORBINGTON, DEEDRA, Grade: 4, Classroom: 112
+    CIGANEK, MANIE, Grade: 3, Classroom: 107
+    SPANICEK, KENDRA, Grade: 4, Classroom: 112
+    CLECKLER, FLOY, Grade: 6, Classroom: 109
+    WICINSKY, TERESE, Grade: 2, Classroom: 108
+    LINHART, LELA, Grade: 3, Classroom: 107
+    DELUNA, KRYSTAL, Grade: 4, Classroom: 112
+    COMO, ZANDRA, Grade: 4, Classroom: 112
+
+Command: G: 1 H
+Output: GARTH, JOHN, GPA: 3.14, Teacher: FALKER ADOLPH, Bus: 0
+
+Command: G: 2 L
+Output: KOZOLA, BUSTER, GPA: 2.76, Teacher: HAMER GAVIN, Bus: 55
+
+Command: A: 1
+Output: Grade 1 Average GPA: 3.0
+
+Command: I
+Output:
+    Grade 0: 0 Students
+    Grade 1: 2 Students
+    Grade 2: 13 Students
+    Grade 3: 9 Students
+    Grade 4: 15 Students
+    Grade 5: 0 Students
+    Grade 6: 21 Students
+
+Command: Q
+Output: quits the program
+
+
