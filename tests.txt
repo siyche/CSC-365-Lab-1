@@ -1,0 +1,337 @@
+// TC-1
+// Test R4: S[tudent]: <lastname>
+// Search for an existing student by last name (short form).
+// Expected output: COOKUS, XUAN, Grade: 3, Classroom: 107, Teacher: FAFARD ROCIO.
+S: COOKUS
+
+// TC-2
+// Test R4: S[tudent]: <lastname>
+// Search for an existing student by last name (long form).
+// Expected output: COOKUS, XUAN, Grade: 3, Classroom: 107, Teacher: FAFARD ROCIO.
+Student: COOKUS
+
+// TC-3
+// Test R4: S[tudent]: <lastname>
+// Search for another existing student (short form).
+// Expected output: ELHADDAD, SHANTE, Grade: 3, Classroom: 107, Teacher: FAFARD ROCIO.
+S: ELHADDAD
+
+// TC-4
+// Test R4: S[tudent]: <lastname>
+// Search for another existing student (long form).
+// Expected output: ELHADDAD, SHANTE, Grade: 3, Classroom: 107, Teacher: FAFARD ROCIO.
+Student: ELHADDAD
+
+// TC-5
+// Test R4: S[tudent]: <lastname>
+// Search for a non-existing student.
+// Expected output: No students found.
+S: NONEXISTENT
+
+// TC-6
+// Test R4: S[tudent]: <lastname>
+// Search for a non-existing student (long form).
+// Expected output: No students found.
+Student: NONEXISTENT
+
+// TC-7
+// Test R5: S[tudent]: <lastname> B[us]
+// Search for an existing student by last name with the bus flag (short form).
+// Expected output: COOKUS, XUAN, Bus Route: 52.
+S: COOKUS B
+
+// TC-8
+// Test R5: S[tudent]: <lastname> B[us]
+// Search for an existing student by last name with the bus flag (long form).
+// Expected output: COOKUS, XUAN, Bus Route: 52.
+Student: COOKUS Bus
+
+// TC-9
+// Test R5: S[tudent]: <lastname> B[us]
+// Search for another existing student with the bus flag (short form).
+// Expected output: ELHADDAD, SHANTE, Bus Route: 52.
+S: ELHADDAD B
+
+// TC-10
+// Test R5: S[tudent]: <lastname> B[us]
+// Search for another existing student with the bus flag (long form).
+// Expected output: ELHADDAD, SHANTE, Bus Route: 52.
+Student: ELHADDAD Bus
+
+// TC-11
+// Test R5: S[tudent]: <lastname> B[us]
+// Search for a non-existing student with the bus flag.
+// Expected output: No students found.
+S: NONEXISTENT B
+
+// TC-12
+// Test R5: S[tudent]: <lastname> B[us]
+// Search for a non-existing student with the bus flag (long form).
+// Expected output: No students found.
+Student: NONEXISTENT Bus
+
+// TC-13
+// Test R6: T[eacher]: <lastname>
+// Search for an existing teacher by last name (short form).
+// Expected output: COOKUS, XUAN; ELHADDAD, SHANTE; SWEDLUND, SHARRI; CIGANEK, MANIE; COVINGTON, TOMAS; EARLY, TORY; LINHART, LELA.
+// (List of students taught by FAFARD).
+T: FAFARD
+
+// TC-14
+// Test R6: T[eacher]: <lastname>
+// Search for an existing teacher by last name (long form).
+// Expected output: COOKUS, XUAN; ELHADDAD, SHANTE; SWEDLUND, SHARRI; CIGANEK, MANIE; COVINGTON, TOMAS; EARLY, TORY; LINHART, LELA.
+// (List of students taught by FAFARD).
+Teacher: FAFARD
+
+// TC-15
+// Test R6: T[eacher]: <lastname>
+// Search for another existing teacher by last name (short form).
+// Expected output: RACANELLO, NOEL; CORONADO, DIMPLE; BOYTER, WAN; DEMARTINI, DEWAYNE; KEMERER, ROSETTA.
+// (List of students taught by KERBS).
+T: KERBS
+
+// TC-16
+// Test R6: T[eacher]: <lastname>
+// Search for another existing teacher by last name (long form).
+// Expected output: RACANELLO, NOEL; CORONADO, DIMPLE; BOYTER, WAN; DEMARTINI, DEWAYNE; KEMERER, ROSETTA.
+// (List of students taught by KERBS).
+Teacher: KERBS
+
+// TC-17
+// Test R6: T[eacher]: <lastname>
+// Search for a non-existing teacher (short form).
+// Expected output: No students found.
+T: NONEXISTENT
+
+// TC-18
+// Test R6: T[eacher]: <lastname>
+// Search for a non-existing teacher (long form).
+// Expected output: No students found.
+Teacher: NONEXISTENT
+
+// TC-19
+// Test R7: G[rade]: <number>
+// Search for students in grade 3 (short form).
+// Expected output: COOKUS, XUAN; ELHADDAD, SHANTE; SWEDLUND, SHARRI; CIGANEK, MANIE; BRODERSEN, HYE; COVINGTON, TOMAS; EARLY, TORY; LINHART, LELA; THEUNISSEN, GRACE.
+G: 3
+
+// TC-20
+// Test R7: G[rade]: <number>
+// Search for students in grade 3 (long form).
+// Expected output: COOKUS, XUAN; ELHADDAD, SHANTE; SWEDLUND, SHARRI; CIGANEK, MANIE; BRODERSEN, HYE; COVINGTON, TOMAS; EARLY, TORY; LINHART, LELA; THEUNISSEN, GRACE.
+Grade: 3
+
+// TC-21
+// Test R7: G[rade]: <number>
+// Search for students in grade 6 (short form).
+// Expected output: SCHOENECKER, PHUONG; RACANELLO, NOEL; STERBACK, PETER; FINCHMAN, MATHILDA; ZAPPAVIGNA, ELLIOTT; OBREIN, STAN; CORONADO, DIMPLE; BOYTER, WAN; SAENPHIMMACHA, NUMBERS; BREVO, JANNETTE; CLECKLER, FLOY; KRAKE, VALENTIN; BEAN, INGER; DEMARTINI, DEWAYNE; WERST, LEON; LAMKIN, TAMA; KREESE, CARRIE; FRIEDSTROM, REED; FEYEREISEN, WILFREDO; COMO, ZANDRA.
+// (List of students in grade 6).
+G: 6
+
+// TC-22
+// Test R7: G[rade]: <number>
+// Search for students in grade 6 (long form).
+// Expected output: SCHOENECKER, PHUONG; RACANELLO, NOEL; STERBACK, PETER; FINCHMAN, MATHILDA; ZAPPAVIGNA, ELLIOTT; OBREIN, STAN; CORONADO, DIMPLE; BOYTER, WAN; SAENPHIMMACHA, NUMBERS; BREVO, JANNETTE; CLECKLER, FLOY; KRAKE, VALENTIN; BEAN, INGER; DEMARTINI, DEWAYNE; WERST, LEON; LAMKIN, TAMA; KREESE, CARRIE; FRIEDSTROM, REED; FEYEREISEN, WILFREDO; COMO, ZANDRA.
+// (List of students in grade 6).
+Grade: 6
+
+// TC-23
+// Test R7: G[rade]: <number>
+// Search for a grade with no students (short form).
+// Expected output: No students found.
+G: 9
+
+// TC-24
+// Test R7: G[rade]: <number>
+// Search for a grade with no students (long form).
+// Expected output: No students found.
+Grade: 9
+
+// TC-25
+// Test R8: B[us]: <number>
+// Search for students on Bus 52 (short form).
+// Expected output: COOKUS, XUAN, Grade: 3, Classroom: 107; ELHADDAD, SHANTE, Grade: 3, Classroom: 107; EARLY, TORY, Grade: 3, Classroom: 107; CORONADO, DIMPLE, Grade: 6, Classroom: 102; KEMERER, ROSETTA, Grade: 6, Classroom: 102.
+// (List of students on Bus 52).
+B: 52
+
+// TC-26
+// Test R8: B[us]: <number>
+// Search for students on Bus 52 (long form).
+// Expected output: COOKUS, XUAN, Grade: 3, Classroom: 107; ELHADDAD, SHANTE, Grade: 3, Classroom: 107; EARLY, TORY, Grade: 3, Classroom: 107; CORONADO, DIMPLE, Grade: 6, Classroom: 102; KEMERER, ROSETTA, Grade: 6, Classroom: 102.
+// (List of students on Bus 52).
+Bus: 52
+
+// TC-27
+// Test R8: B[us]: <number>
+// Search for students on Bus 55 (short form).
+// Expected output: SWEDLUND, SHARRI, Grade: 3, Classroom: 107; ZAPPAVIGNA, ELLIOTT, Grade: 6, Classroom: 106; BOYTER, WAN, Grade: 6, Classroom: 102; SAENPHIMMACHA, NUMBERS, Grade: 6, Classroom: 111; WERST, LEON, Grade: 6, Classroom: 111; LAMKIN, TAMA, Grade: 6, Classroom: 111.
+// (List of students on Bus 55).
+B: 55
+
+// TC-28
+// Test R8: B[us]: <number>
+// Search for students on Bus 55 (long form).
+// Expected output: SWEDLUND, SHARRI, Grade: 3, Classroom: 107; ZAPPAVIGNA, ELLIOTT, Grade: 6, Classroom: 106; BOYTER, WAN, Grade: 6, Classroom: 102; SAENPHIMMACHA, NUMBERS, Grade: 6, Classroom: 111; WERST, LEON, Grade: 6, Classroom: 111; LAMKIN, TAMA, Grade: 6, Classroom: 111.
+// (List of students on Bus 55).
+Bus: 55
+
+// TC-29
+// Test R8: B[us]: <number>
+// Search for a non-existing bus route (short form).
+// Expected output: No students found.
+B: 999
+
+// TC-30
+// Test R8: B[us]: <number>
+// Search for a non-existing bus route (long form).
+// Expected output: No students found.
+Bus: 999
+
+// TC-31
+// Test R9: G[rade]: <number> H[igh]
+// Search for the student with the highest GPA in grade 3 (short form).
+// Expected output: SWEDLUND, SHARRI, GPA: 3.24, Teacher: FAFARD ROCIO, Bus: 55
+G: 3 High
+
+// TC-32
+// Test R9: G[rade]: <number> H[igh]
+// Search for the student with the highest GPA in grade 3 (long form).
+// Expected output: SWEDLUND, SHARRI, GPA: 3.24, Teacher: FAFARD ROCIO, Bus: 55
+Grade: 3 High
+
+// TC-33
+// Test R9: G[rade]: <number> L[ow]
+// Search for the student with the lowest GPA in grade 3 (short form).
+// Expected output: CIGANEK, MANIE, GPA: 2.79, Teacher: FAFARD ROCIO, Bus: 53.
+G: 3 Low
+
+// TC-34
+// Test R9: G[rade]: <number> L[ow]
+// Search for the student with the lowest GPA in grade 3 (long form).
+// Expected output: CIGANEK, MANIE, GPA: 2.79, Teacher: FAFARD ROCIO, Bus: 53.
+Grade: 3 Low
+
+// TC-35
+// Test R9: G[rade]: <number> H[igh]
+// Search for the student with the highest GPA in grade 6 (short form).
+// Expected output: LAMKIN, TAMA, GPA: 3.23, Teacher: NISTENDIRK NANCY, Bus: 55.
+G: 6 High
+
+// TC-36
+// Test R9: G[rade]: <number> H[igh]
+// Search for the student with the highest GPA in grade 6 (long form).
+// Expected output: LAMKIN, TAMA, GPA: 3.23, Teacher: NISTENDIRK NANCY, Bus: 55.
+Grade: 6 High
+
+// TC-37
+// Test R9: G[rade]: <number> L[ow]
+// Search for the student with the lowest GPA in grade 6 (short form).
+// Expected output: KRAKE, VALENTIN, GPA: 2.78, Teacher: GAMBREL JAE, Bus: 56.
+G: 6 Low
+
+// TC-38
+// Test R9: G[rade]: <number> L[ow]
+// Search for the student with the lowest GPA in grade 6 (long form).
+// Expected output: KRAKE, VALENTIN, GPA: 2.78, Teacher: GAMBREL JAE, Bus: 56.
+Grade: 6 Low
+
+// TC-39
+// Test R9: G[rade]: <number> H[igh]
+// Search for a grade with no students (short form).
+// Expected output: No students found.
+G: 9 High
+
+// TC-40
+// Test R9: G[rade]: <number> H[igh]
+// Search for a grade with no students (long form).
+// Expected output: No students found.
+Grade: 9 High
+
+// TC-41
+// Test R9: G[rade]: <number> L[ow]
+// Search for a grade with no students (short form).
+// Expected output: No students found.
+G: 9 Low
+
+// TC-42
+// Test R9: G[rade]: <number> L[ow]
+// Search for a grade with no students (long form).
+// Expected output: No students found.
+Grade: 9 Low
+
+// TC-43
+// Test R10: A[verage]: <number>
+// Calculate the average GPA for grade 3 (short form).
+// Expected output: Grade 3 Average GPA: 3.05.
+A: 3
+
+// TC-44
+// Test R10: A[verage]: <number>
+// Calculate the average GPA for grade 3 (long form).
+// Expected output: Grade 3 Average GPA: 3.05.
+Average: 3
+
+// TC-45
+// Test R10: A[verage]: <number>
+// Calculate the average GPA for grade 6 (short form).
+// Expected output: Grade 6 Average GPA: 2.98
+A: 6
+
+// TC-46
+// Test R10: A[verage]: <number>
+// Calculate the average GPA for grade 6 (long form).
+// Expected output: Grade 6 Average GPA: 2.98
+Average: 6
+
+// TC-47
+// Test R10: A[verage]: <number>
+// Calculate the average GPA for a grade with no students (short form).
+// Expected output: No students found.
+A: 9
+
+// TC-48
+// Test R10: A[verage]: <number>
+// Calculate the average GPA for a grade with no students (long form).
+// Expected output: No students found.
+Average: 9
+
+// TC-49
+// Test R11: I[nfo]
+// Display the total number of students in each grade (short form).
+// Expected output:
+// Grade 0: 0 Students
+// Grade 1: 2 Students
+// Grade 2: 13 Students
+// Grade 3: 9 Students
+// Grade 4: 15 Students
+// Grade 5: 0 Students
+// Grade 6: 21 Students
+I
+
+// TC-50
+// Test R11: I[nfo]
+// Display the total number of students in each grade (long form).
+// Expected output:
+// Grade 0: 0 Students
+// Grade 1: 2 Students
+// Grade 2: 13 Students
+// Grade 3: 9 Students
+// Grade 4: 15 Students
+// Grade 5: 0 Students
+// Grade 6: 21 Students
+Info
+
+// TC-51
+// Test R12: Q[uit]
+// Quit the program (short form).
+// Expected behavior: Program terminates without error.
+Q
+
+
+// TC-52
+// Test R12: Q[uit]
+// Quit the program (long form).
+// This test case cannot run in the same session as TC-51, as the program terminates after Q.
+// To test Quit, comment out Q, uncomment Quit and re-run the program.
+//Quit

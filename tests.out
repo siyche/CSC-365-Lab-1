@@ -1,70 +1,169 @@
-Enter Command:
-any input
-• S[tudent]: <lastname> [B[us]]
-• T[eacher]: <lastname>
-• B[us]: <number>
-• G[rade]: <number> [H[igh]|L[ow]]
-• A[verage]: <number>
-• I[nfo]
-• Q[uit]
-
-
-Command: S: COOKUS 
-Output: COOKUS, XUAN, Grade: 3, Classroom: 107, Teacher: FAFARD ROCIO
-
-Command: S: CORKER
-Output: CORKER, CARTER, Grade: 4, Classroom: 105, Teacher: HANTZ JED
-
-Command: S: COOKUS B
-Output: COOKUS, XUAN, Bus Route: 52
-
-Command: T: FAFARD
-Output: 
-    COOKUS, XUAN
-    ELHADDAD, SHANTE
-    SWEDLUND, SHARRI
-    CIGANEK, MANIE
-    COVINGTON, TOMAS
-    EARLY, TORY
-    LINHART, LELA
-
-Command: G: 1
-Output:
-    SAELEE, DANILO
-    GARTH, JOHN
-
-Command: B: 53
-Output:
-    CORKER, CARTER, Grade: 4, Classroom: 105
-    WORBINGTON, DEEDRA, Grade: 4, Classroom: 112
-    CIGANEK, MANIE, Grade: 3, Classroom: 107
-    SPANICEK, KENDRA, Grade: 4, Classroom: 112
-    CLECKLER, FLOY, Grade: 6, Classroom: 109
-    WICINSKY, TERESE, Grade: 2, Classroom: 108
-    LINHART, LELA, Grade: 3, Classroom: 107
-    DELUNA, KRYSTAL, Grade: 4, Classroom: 112
-    COMO, ZANDRA, Grade: 4, Classroom: 112
-
-Command: G: 1 H
-Output: GARTH, JOHN, GPA: 3.14, Teacher: FALKER ADOLPH, Bus: 0
-
-Command: G: 2 L
-Output: KOZOLA, BUSTER, GPA: 2.76, Teacher: HAMER GAVIN, Bus: 55
-
-Command: A: 1
-Output: Grade 1 Average GPA: 3.0
-
-Command: I
-Output:
-    Grade 0: 0 Students
-    Grade 1: 2 Students
-    Grade 2: 13 Students
-    Grade 3: 9 Students
-    Grade 4: 15 Students
-    Grade 5: 0 Students
-    Grade 6: 21 Students
-
-Command: Q
-Output: quits the program
-
-
+Enter command: COOKUS, XUAN, Grade: 3, Classroom: 107, Teacher: FAFARD ROCIO
+Enter command: COOKUS, XUAN, Grade: 3, Classroom: 107, Teacher: FAFARD ROCIO
+Enter command: ELHADDAD, SHANTE, Grade: 3, Classroom: 107, Teacher: FAFARD ROCIO
+Enter command: ELHADDAD, SHANTE, Grade: 3, Classroom: 107, Teacher: FAFARD ROCIO
+Enter command: No students found.
+Enter command: No students found.
+Enter command: COOKUS, XUAN, Bus Route: 52
+Enter command: COOKUS, XUAN, Bus Route: 52
+Enter command: ELHADDAD, SHANTE, Bus Route: 52
+Enter command: ELHADDAD, SHANTE, Bus Route: 52
+Enter command: No students found.
+Enter command: No students found.
+Enter command: COOKUS, XUAN
+ELHADDAD, SHANTE
+SWEDLUND, SHARRI
+CIGANEK, MANIE
+COVINGTON, TOMAS
+EARLY, TORY
+LINHART, LELA
+Enter command: COOKUS, XUAN
+ELHADDAD, SHANTE
+SWEDLUND, SHARRI
+CIGANEK, MANIE
+COVINGTON, TOMAS
+EARLY, TORY
+LINHART, LELA
+Enter command: RACANELLO, NOEL
+CORONADO, DIMPLE
+BOYTER, WAN
+KEMERER, ROSETTA
+DEMARTINI, DEWAYNE
+Enter command: RACANELLO, NOEL
+CORONADO, DIMPLE
+BOYTER, WAN
+KEMERER, ROSETTA
+DEMARTINI, DEWAYNE
+Enter command: No students found.
+Enter command: No students found.
+Enter command: COOKUS, XUAN
+ELHADDAD, SHANTE
+BRODERSEN, HYE
+SWEDLUND, SHARRI
+CIGANEK, MANIE
+COVINGTON, TOMAS
+EARLY, TORY
+LINHART, LELA
+THEUNISSEN, GRACE
+Enter command: COOKUS, XUAN
+ELHADDAD, SHANTE
+BRODERSEN, HYE
+SWEDLUND, SHARRI
+CIGANEK, MANIE
+COVINGTON, TOMAS
+EARLY, TORY
+LINHART, LELA
+THEUNISSEN, GRACE
+Enter command: SCHOENECKER, PHUONG
+RACANELLO, NOEL
+STERBACK, PETER
+FINCHMAN, MATHILDA
+ZAPPAVIGNA, ELLIOTT
+OBREIN, STAN
+CORONADO, DIMPLE
+SAENPHIMMACHA, NUMBERS
+BOYTER, WAN
+BREVO, JANNETTE
+CLECKLER, FLOY
+KRAKE, VALENTIN
+KEMERER, ROSETTA
+BEAN, INGER
+DEMARTINI, DEWAYNE
+CREMEANS, RANDOLPH
+FEYEREISEN, WILFREDO
+WERST, LEON
+LAMKIN, TAMA
+KREESE, CARRIE
+FRIEDSTROM, REED
+Enter command: SCHOENECKER, PHUONG
+RACANELLO, NOEL
+STERBACK, PETER
+FINCHMAN, MATHILDA
+ZAPPAVIGNA, ELLIOTT
+OBREIN, STAN
+CORONADO, DIMPLE
+SAENPHIMMACHA, NUMBERS
+BOYTER, WAN
+BREVO, JANNETTE
+CLECKLER, FLOY
+KRAKE, VALENTIN
+KEMERER, ROSETTA
+BEAN, INGER
+DEMARTINI, DEWAYNE
+CREMEANS, RANDOLPH
+FEYEREISEN, WILFREDO
+WERST, LEON
+LAMKIN, TAMA
+KREESE, CARRIE
+FRIEDSTROM, REED
+Enter command: No students found.
+Enter command: No students found.
+Enter command: COOKUS, XUAN, Grade: 3, Classroom: 107
+ELHADDAD, SHANTE, Grade: 3, Classroom: 107
+IMMERMAN, DEVIN, Grade: 4, Classroom: 105
+OBREIN, STAN, Grade: 6, Classroom: 111
+CORONADO, DIMPLE, Grade: 6, Classroom: 102
+SARAO, DIEDRA, Grade: 2, Classroom: 108
+EARLY, TORY, Grade: 3, Classroom: 107
+KEMERER, ROSETTA, Grade: 6, Classroom: 102
+Enter command: COOKUS, XUAN, Grade: 3, Classroom: 107
+ELHADDAD, SHANTE, Grade: 3, Classroom: 107
+IMMERMAN, DEVIN, Grade: 4, Classroom: 105
+OBREIN, STAN, Grade: 6, Classroom: 111
+CORONADO, DIMPLE, Grade: 6, Classroom: 102
+SARAO, DIEDRA, Grade: 2, Classroom: 108
+EARLY, TORY, Grade: 3, Classroom: 107
+KEMERER, ROSETTA, Grade: 6, Classroom: 102
+Enter command: SWEDLUND, SHARRI, Grade: 3, Classroom: 107
+ZAPPAVIGNA, ELLIOTT, Grade: 6, Classroom: 106
+SAENPHIMMACHA, NUMBERS, Grade: 6, Classroom: 111
+BOYTER, WAN, Grade: 6, Classroom: 102
+KOZOLA, BUSTER, Grade: 2, Classroom: 108
+DEMARTINI, DEWAYNE, Grade: 6, Classroom: 102
+BEX, TAMESHA, Grade: 4, Classroom: 105
+WERST, LEON, Grade: 6, Classroom: 111
+LAMKIN, TAMA, Grade: 6, Classroom: 111
+Enter command: SWEDLUND, SHARRI, Grade: 3, Classroom: 107
+ZAPPAVIGNA, ELLIOTT, Grade: 6, Classroom: 106
+SAENPHIMMACHA, NUMBERS, Grade: 6, Classroom: 111
+BOYTER, WAN, Grade: 6, Classroom: 102
+KOZOLA, BUSTER, Grade: 2, Classroom: 108
+DEMARTINI, DEWAYNE, Grade: 6, Classroom: 102
+BEX, TAMESHA, Grade: 4, Classroom: 105
+WERST, LEON, Grade: 6, Classroom: 111
+LAMKIN, TAMA, Grade: 6, Classroom: 111
+Enter command: No students found.
+Enter command: No students found.
+Enter command: SWEDLUND, SHARRI, GPA: 3.24, Teacher: FAFARD ROCIO, Bus: 55
+Enter command: SWEDLUND, SHARRI, GPA: 3.24, Teacher: FAFARD ROCIO, Bus: 55
+Enter command: CIGANEK, MANIE, GPA: 2.79, Teacher: FAFARD ROCIO, Bus: 53
+Enter command: CIGANEK, MANIE, GPA: 2.79, Teacher: FAFARD ROCIO, Bus: 53
+Enter command: LAMKIN, TAMA, GPA: 3.23, Teacher: NISTENDIRK NANCY, Bus: 55
+Enter command: LAMKIN, TAMA, GPA: 3.23, Teacher: NISTENDIRK NANCY, Bus: 55
+Enter command: KRAKE, VALENTIN, GPA: 2.78, Teacher: GAMBREL JAE, Bus: 56
+Enter command: KRAKE, VALENTIN, GPA: 2.78, Teacher: GAMBREL JAE, Bus: 56
+Enter command: No students found.
+Enter command: No students found.
+Enter command: No students found.
+Enter command: No students found.
+Enter command: Grade 3 Average GPA: 3.05
+Enter command: Grade 3 Average GPA: 3.05
+Enter command: Grade 6 Average GPA: 2.98
+Enter command: Grade 6 Average GPA: 2.98
+Enter command: No students found.
+Enter command: No students found.
+Enter command: Grade 0: 0 Students
+Grade 1: 2 Students
+Grade 2: 13 Students
+Grade 3: 9 Students
+Grade 4: 15 Students
+Grade 5: 0 Students
+Grade 6: 21 Students
+Enter command: Grade 0: 0 Students
+Grade 1: 2 Students
+Grade 2: 13 Students
+Grade 3: 9 Students
+Grade 4: 15 Students
+Grade 5: 0 Students
+Grade 6: 21 Students
+Enter command: 

@@ -1,5 +1,3 @@
-import os
-
 def load_students(file_path):
     """Load student data from the given file."""
     students = []
@@ -75,30 +73,30 @@ def main():
 
     while True:
         command = input("Enter command: ").strip()
-        if command.startswith('S:'):
+        if command.startswith('S:') or command.startswith('Student:'):
             parts = command.split()
             last_name = parts[1]
-            bus = len(parts) > 2 and parts[2] == 'B'
+            bus = len(parts) > 2 and (parts[2] == 'B' or parts[2] == 'Bus')
             results = search_students_by_last_name(students, last_name, bus)
             print("\n".join(results) if results else "No students found.")
 
-        elif command.startswith('T:'):
-            teacher_last_name = command[2:].strip()
+        elif command.startswith('T:') or command.startswith('Teacher:'):
+            teacher_last_name = command.split(':', 1)[1].strip()
             results = search_students_by_teacher(students, teacher_last_name)
             print("\n".join(results) if results else "No students found.")
 
-        elif command.startswith('B:'):
-            bus_route = int(command[2:].strip())
+        elif command.startswith('B:') or command.startswith('Bus:'):
+            bus_route = int(command.split(':', 1)[1].strip())
             results = search_students_by_bus(students, bus_route)
             print("\n".join(results) if results else "No students found.")
 
-        elif command.startswith('G:'):
+        elif command.startswith('G:') or command.startswith('Grade:'):
             parts = command.split()
             grade = int(parts[1])
             if len(parts) > 2:
-                if parts[2] == 'H':
+                if parts[2] == 'H' or parts[2] == 'High':
                     result = grade_high_low_gpa(students, grade, high=True)
-                elif parts[2] == 'L':
+                elif parts[2] == 'L' or parts[2] == 'Low':
                     result = grade_high_low_gpa(students, grade, high=False)
                 else:
                     result = "Invalid command."
@@ -107,16 +105,17 @@ def main():
                 results = search_students_by_grade(students, grade)
                 print("\n".join(results) if results else "No students found.")
 
-        elif command.startswith('A:'):
-            grade = int(command[2:].strip())
+        elif (command.startswith('A:') or command.startswith('Average:')):
+            parts = command.split(':')
+            grade = int(parts[1].strip())
             avg = grade_average_gpa(students, grade)
             print(f"Grade {grade} Average GPA: {avg}" if avg is not None else "No students found.")
 
-        elif command == 'I':
+        elif command == 'I' or command == 'Info':
             summary = info_summary(students)
             print("\n".join(summary))
 
-        elif command == 'Q':
+        elif command == 'Q' or command == 'Quit':
             break
 
         else:
